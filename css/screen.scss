@@ -221,7 +221,7 @@ html {
   font-size: calc($root-font-size / 16 * 100%);
   line-height: calc(24 / $root-font-size); // 24px
   font-family: $font-family-primary; // global font-family
-  color: $color-text-light; // global text color
+  color: $color-text; // global text color
   scroll-behavior: smooth; // smooth scrolling
 }
 
@@ -245,7 +245,6 @@ h3,
 h4,
 h5,
 h6 {
-  color: $color-text;
   font-weight: 700;
 }
 
