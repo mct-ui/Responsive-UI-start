@@ -123,19 +123,19 @@ $ratio: 1.125;
 
 // font-sizes
 $ms0: 1rem; // 14px
-$ms-1: calc($ms0 / $ratio); // 12px
-$ms-2: calc($ms-1 / $ratio); // 11px
-$ms1: calc($ms0 * $ratio); // 16px
-$ms2: calc($ms1 * $ratio); // 18px
-$ms3: calc($ms2 * $ratio); // 20px
-$ms4: calc($ms3 * $ratio); // 22px
-$ms5: calc($ms4 * $ratio); // 25px
-$ms6: calc($ms5 * $ratio); // 28px
-$ms7: calc($ms6 * $ratio); // 32px
-$ms8: calc($ms7 * $ratio); // 36px
-$ms9: calc($ms8 * $ratio); // 40px
-$ms10: calc($ms9 * $ratio); // 45px
-$ms11: calc($ms10 * $ratio); // 51px
+$ms-1: calc($ms0 / $ratio);
+$ms-2: calc($ms-1 / $ratio);
+$ms1: calc($ms0 * $ratio);
+$ms2: calc($ms1 * $ratio);
+$ms3: calc($ms2 * $ratio);
+$ms4: calc($ms3 * $ratio);
+$ms5: calc($ms4 * $ratio);
+$ms6: calc($ms5 * $ratio);
+$ms7: calc($ms6 * $ratio);
+$ms8: calc($ms7 * $ratio);
+$ms9: calc($ms8 * $ratio);
+$ms10: calc($ms9 * $ratio);
+$ms11: calc($ms10 * $ratio);
 
 $font-family-primary: Helvetica, arial, sans-serif;
 
