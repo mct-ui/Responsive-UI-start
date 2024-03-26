@@ -8,11 +8,6 @@
  # TOOLS
 /*---------------------------------------*/
 
-// a function to get the color from the palette
-@function get-color($palette, $color) {
-  @return map-get(map-get($palettes, $palette), $color);
-}
-
 //
 // Media Query mixin
 // @include mq(#point, #query1, #query2);
@@ -44,65 +39,18 @@
 // Settings: Colors
 // ---
 
-$color-blue: #1abaff;
-$color-blue-hue: hue($color-blue);
-$color-blue-saturation: saturation($color-blue);
+$color-text: ;
+$color-text-light: ;
+$color-text-lighter: ;
 
-$color-teal: #1affba;
-$color-teal-hue: hue($color-teal);
-$color-teal-saturation: saturation($color-teal);
+$color-primary: ;
+$color-primary-light: ;
+$color-primary-lighter: ;
+$color-primary-dark: ;
 
-$color-gray-hue: hue($color-blue);
-$color-gray-saturation: 10%;
-
-$palettes: (
-  color-gray: (
-    100: hsl($color-gray-hue, $color-gray-saturation, 95%),
-    200: hsl($color-gray-hue, $color-gray-saturation, 90%),
-    300: hsl($color-gray-hue, $color-gray-saturation, 80%),
-    400: hsl($color-gray-hue, $color-gray-saturation, 70%),
-    500: hsl($color-gray-hue, $color-gray-saturation, 50%),
-    600: hsl($color-gray-hue, $color-gray-saturation, 40%),
-    700: hsl($color-gray-hue, $color-gray-saturation, 30%),
-    800: hsl($color-gray-hue, $color-gray-saturation, 20%),
-    900: hsl($color-gray-hue, $color-gray-saturation, 10%),
-  ),
-  color-blue: (
-    100: hsl($color-blue-hue, $color-blue-saturation - 10%, 95%),
-    200: hsl($color-blue-hue, $color-blue-saturation - 10%, 90%),
-    300: hsl($color-blue-hue, $color-blue-saturation - 5%, 80%),
-    400: hsl($color-blue-hue, $color-blue-saturation - 5%, 65%),
-    500: hsl($color-blue-hue, $color-blue-saturation, 50%),
-    600: hsl($color-blue-hue, $color-blue-saturation + 5%, 40%),
-    700: hsl($color-blue-hue, $color-blue-saturation + 5%, 30%),
-    800: hsl($color-blue-hue, $color-blue-saturation + 10%, 20%),
-    900: hsl($color-blue-hue, $color-blue-saturation + 10%, 10%),
-  ),
-  color-teal: (
-    100: hsl($color-teal-hue, $color-teal-saturation - 10%, 95%),
-    200: hsl($color-teal-hue, $color-teal-saturation - 10%, 90%),
-    300: hsl($color-teal-hue, $color-teal-saturation - 5%, 80%),
-    400: hsl($color-teal-hue, $color-teal-saturation, 70%),
-    500: hsl($color-teal-hue, $color-teal-saturation, 50%),
-    600: hsl($color-teal-hue, $color-teal-saturation + 5%, 45%),
-    700: hsl($color-teal-hue, $color-teal-saturation + 5%, 35%),
-    800: hsl($color-teal-hue, $color-teal-saturation + 10%, 25%),
-    900: hsl($color-teal-hue, $color-teal-saturation + 10%, 15%),
-  ),
-);
-
-$color-text: get-color(color-gray, 900);
-$color-text-light: get-color(color-gray, 700);
-$color-text-lighter: get-color(color-gray, 500);
-
-$color-primary: get-color(color-blue, 600);
-$color-primary-light: get-color(color-blue, 500);
-$color-primary-lighter: get-color(color-blue, 400);
-$color-primary-dark: get-color(color-blue, 700);
-
-$color-border: get-color(color-gray, 200);
-$color-border-light: get-color(color-gray, 100);
-$color-border-dark: get-color(color-gray, 300);
+$color-border: ;
+$color-border-light: ;
+$color-border-dark: ;
 
 // ---
 // Settings: radii
@@ -221,7 +169,6 @@ html {
   font-size: calc($root-font-size / 16 * 100%);
   line-height: calc(24 / $root-font-size); // 24px
   font-family: $font-family-primary; // global font-family
-  color: $color-text; // global text color
   scroll-behavior: smooth; // smooth scrolling
 }
 
