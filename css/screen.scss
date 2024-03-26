@@ -66,24 +66,11 @@ $radius-l: 8px;
 
 $root-font-size: 16;
 
-// modular scale ratio
-$ratio: 1.125;
-
 // font-sizes
 $ms0: 1rem;
-$ms-1: calc($ms0 / $ratio);
-$ms-2: calc($ms-1 / $ratio);
-$ms1: calc($ms0 * $ratio);
-$ms2: calc($ms1 * $ratio);
-$ms3: calc($ms2 * $ratio);
-$ms4: calc($ms3 * $ratio);
-$ms5: calc($ms4 * $ratio);
-$ms6: calc($ms5 * $ratio);
-$ms7: calc($ms6 * $ratio);
-$ms8: calc($ms7 * $ratio);
-$ms9: calc($ms8 * $ratio);
-$ms10: calc($ms9 * $ratio);
-$ms11: calc($ms10 * $ratio);
+
+// Add font-size from the design here
+// eg: $ms1: calc(18 / $root-font-size);
 
 $font-family-primary: Helvetica, arial, sans-serif;
 
