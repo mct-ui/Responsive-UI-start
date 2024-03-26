@@ -70,7 +70,7 @@ $root-font-size: 16;
 $ratio: 1.125;
 
 // font-sizes
-$ms0: 1rem; // 14px
+$ms0: 1rem;
 $ms-1: calc($ms0 / $ratio);
 $ms-2: calc($ms-1 / $ratio);
 $ms1: calc($ms0 * $ratio);
