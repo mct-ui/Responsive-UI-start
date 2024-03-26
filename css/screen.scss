@@ -39,18 +39,18 @@
 // Settings: Colors
 // ---
 
-$color-text: ;
-$color-text-light: ;
-$color-text-lighter: ;
+$color-text: black;
+$color-text-light: gray;
+$color-text-lighter: lightgray;
 
-$color-primary: ;
-$color-primary-light: ;
-$color-primary-lighter: ;
-$color-primary-dark: ;
+$color-primary: blue;
+$color-primary-light: cornflowerblue;
+$color-primary-lighter: aliceblue;
+$color-primary-dark: darkblue;
 
-$color-border: ;
-$color-border-light: ;
-$color-border-dark: ;
+$color-border: darkgray;
+$color-border-light: Gainsboro;
+$color-border-dark: gray;
 
 // ---
 // Settings: radii
@@ -71,6 +71,9 @@ $ms0: 1rem;
 
 // Add font-size from the design here
 // eg: $ms1: calc(18 / $root-font-size);
+$ms4: calc(40 / $root-font-size);
+$ms3: calc(30 / $root-font-size);
+$ms1: calc(20 / $root-font-size);
 
 $font-family-primary: Helvetica, arial, sans-serif;
 
@@ -233,13 +236,6 @@ blockquote {
   font-size: $ms3;
   line-height: calc($baseline * 4);
   margin-bottom: $space-m;
-}
-
-figcaption {
-  font-size: $ms-1;
-  line-height: calc($baseline * 2);
-  margin-top: $space-xs;
-  color: $color-text-lighter;
 }
 
 hr {
@@ -583,11 +579,6 @@ a:active {
   ---
   Font size utility classes
 */
-
-.u-ms-1 {
-  font-size: $ms-1;
-  line-height: calc($baseline * 3);
-}
 
 /*
     Utilities: Widths
